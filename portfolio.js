@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const projectsData = {
     'projet_academique': {
         title: 'Atelier de Développement Logiciel (BTS SIO)',
-        img: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800',
+        img: 'img/projet-academique.svg',
         context: 'Cet atelier pratique obligatoire encadré par le CNED permet d\'apprendre à concevoir, développer et tester des architectures applicatives métiers. Il constitue l\'une des briques centrales de mon cursus BTS SIO option SLAM.',
         skills: [
             'Concevoir et développer une solution applicative',
@@ -75,8 +75,8 @@ const projectsData = {
     },
     'projet_professionnel': {
         title: 'Mission technique en entreprise (Stage 1re année)',
-        img: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800',
-        context: 'Projet à réaliser durant mon stage obligatoire de 4 à 5 semaines (prévu entre mai et août 2027). J\'y mettrai en pratique mes apprentissages dans une équipe professionnelle de développement.',
+        img: 'img/projet-professionnel.svg',
+        context: 'Projet à réaliser durant mon stage obligatoire de 4 à 5 semaines (prévu entre mars et juin 2027). J\'y mettrai en pratique mes apprentissages dans une équipe professionnelle de développement.',
         skills: [
             'Répondre aux besoins d\'une organisation et de ses utilisateurs',
             'Collaborer au sein d\'une équipe de développement informatique',
@@ -86,7 +86,7 @@ const projectsData = {
     },
     'projet_roblox': {
         title: 'Création d\'un Jeu Vidéo Multijoueur (Roblox Studio)',
-        img: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800',
+        img: 'img/projet-roblox.svg',
         context: 'Projet personnel né d\'une passion pour le jeu vidéo et d\'une volonté de comprendre les mécaniques multi-joueurs. Développement de la logique en Lua (programmation événementielle) et gestion de la synchronisation réseau des joueurs (réseau Client-Serveur).',
         skills: [
             'Développer des algorithmes en langage Lua',
