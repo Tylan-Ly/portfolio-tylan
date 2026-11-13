@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 300" role="img" aria-label="Schéma : script Python, API HenrikDev, fichier JSON, page web">
+<rect width="820" height="300" rx="14" fill="#0d0b17"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#fb923c"/></marker></defs>
+<g font-family="Inter, 'DejaVu Sans', sans-serif" text-anchor="middle">
+  <g>
+    <rect x="20" y="70" width="170" height="110" rx="12" fill="#1c1733" stroke="#fde047" stroke-width="2"/>
+    <text x="105" y="48" font-size="13" fill="#a1a1aa" font-weight="700">1. Mon PC</text>
+    <text x="105" y="108" font-size="15" fill="#fff" font-weight="700">Script Python</text>
+    <text x="105" y="130" font-size="12.5" fill="#fde047" font-family="monospace">valo_bilan.py</text>
+    <text x="105" y="156" font-size="11.5" fill="#a1a1aa">urllib · json · argparse</text>
+  </g>
+  <g>
+    <rect x="235" y="70" width="170" height="110" rx="12" fill="#1c1733" stroke="#60a5fa" stroke-width="2"/>
+    <text x="320" y="48" font-size="13" fill="#a1a1aa" font-weight="700">2. Service en ligne</text>
+    <text x="320" y="108" font-size="15" fill="#fff" font-weight="700">API HenrikDev</text>
+    <text x="320" y="130" font-size="12.5" fill="#60a5fa">REST · HTTPS · JSON</text>
+    <text x="320" y="156" font-size="11.5" fill="#a1a1aa">30 requêtes / minute max</text>
+  </g>
+  <g>
+    <rect x="450" y="70" width="150" height="110" rx="12" fill="#1c1733" stroke="#34d399" stroke-width="2"/>
+    <text x="525" y="48" font-size="13" fill="#a1a1aa" font-weight="700">3. Données</text>
+    <text x="525" y="108" font-size="15" fill="#fff" font-weight="700">bilan.json</text>
+    <text x="525" y="130" font-size="12.5" fill="#34d399">+ bilan.txt (résumé)</text>
+    <text x="525" y="156" font-size="11.5" fill="#a1a1aa">ACS · ADR · K/D/A · HS %</text>
+  </g>
+  <g>
+    <rect x="645" y="70" width="155" height="110" rx="12" fill="#1c1733" stroke="#fb923c" stroke-width="2"/>
+    <text x="722" y="48" font-size="13" fill="#a1a1aa" font-weight="700">4. Affichage</text>
+    <text x="722" y="108" font-size="15" fill="#fff" font-weight="700">Page web</text>
+    <text x="722" y="130" font-size="12.5" fill="#fb923c">HTML · CSS · JS · SVG</text>
+    <text x="722" y="156" font-size="11.5" fill="#a1a1aa">hébergée sur GitHub Pages</text>
+  </g>
+  <g stroke="#fb923c" stroke-width="2.5" fill="none" stroke-linecap="round" marker-end="url(#ar)">
+    <path d="M192 112H231"/><path d="M407 112H446"/><path d="M602 112H641"/>
+  </g>
+  <g font-size="11.5" fill="#d4d4d8"><text x="212" y="100">requêtes</text><text x="426" y="100">calculs</text><text x="621" y="100">chargement</text></g>
+  <rect x="20" y="215" width="780" height="56" rx="10" fill="#fde047" fill-opacity="0.1" stroke="#fde047" stroke-opacity="0.5"/>
+  <text x="410" y="238" font-size="13" fill="#fde047" font-weight="700">Sécurité : la clé d'API est saisie au clavier (masquée) ou lue dans une variable d'environnement.</text>
+  <text x="410" y="257" font-size="12.5" fill="#e4e4e7">Elle n'est jamais écrite dans un fichier, ni dans le code publié.</text>
+</g>
+</svg>
