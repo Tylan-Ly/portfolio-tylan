@@ -73,16 +73,19 @@ const projectsData = {
         ],
         link: 'https://github.com/Tylan-Ly'
     },
-    'projet_professionnel': {
-        title: 'Mission technique en entreprise (Stage 1re année)',
-        img: 'img/projet-professionnel.svg',
-        context: 'Projet à réaliser durant mon stage obligatoire de 4 à 5 semaines (prévu entre mars et juin 2027). J\'y mettrai en pratique mes apprentissages dans une équipe professionnelle de développement.',
+    'projet_valorant': {
+        title: 'Chronique Valorant : tableau de bord de statistiques',
+        img: 'img/projet-valorant.svg',
+        context: 'Projet personnel réalisé en novembre 2026 avec l\'aide de Claude (IA). Un script Python interroge l\'API REST HenrikDev pour récupérer mes dernières parties classées de Valorant, calcule des statistiques (ACS, ADR, K/D/A, % de headshots, premiers sangs, résultats par agent et par carte) et les exporte en JSON. Une page web (HTML, CSS, JavaScript, graphiques en SVG) affiche ensuite l\'évolution de ma forme et de mon rang. Les données de la démonstration sont figées au 13 novembre 2026.',
         skills: [
-            'Répondre aux besoins d\'une organisation et de ses utilisateurs',
-            'Collaborer au sein d\'une équipe de développement informatique',
-            'Assurer la maintenance ou l\'intégration de modules logiciels'
+            'Programmer en Python : appels HTTP, gestion des erreurs et respect de la limite de requêtes de l\'API',
+            'Exploiter une API REST et manipuler des données au format JSON',
+            'Calculer et visualiser des statistiques dans une page web (HTML, CSS, JavaScript, SVG)',
+            'Protéger une clé d\'API : saisie masquée, jamais écrite dans un fichier'
         ],
-        link: 'https://github.com/Tylan-Ly'
+        link: 'valorant/index.html',
+        linkLabel: 'Ouvrir le projet',
+        linkIcon: 'fas fa-external-link-alt'
     },
     'projet_roblox': {
         title: 'Création d\'un Jeu Vidéo Multijoueur (Roblox Studio)',
@@ -107,6 +110,7 @@ function openModal(projectId) {
         document.getElementById('modal-img').src = data.img;
         document.getElementById('modal-context').innerText = data.context;
         document.getElementById('modal-link').href = data.link;
+        document.getElementById('modal-link').innerHTML = `<i class="${data.linkIcon || 'fab fa-github'}"></i> ${data.linkLabel || 'Voir le dépôt GitHub'}`;
 
         const skillsList = document.getElementById('modal-skills');
         skillsList.innerHTML = '';

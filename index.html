@@ -166,7 +166,8 @@
             <div class="filter-container">
                 <button class="filter-btn active" data-filter="all">Tous les projets</button>
                 <button class="filter-btn" data-filter="academique">Académique</button>
-                <button class="filter-btn" data-filter="professionnel">Professionnel</button>
+                <!-- Filtre « Professionnel » à réactiver quand le projet de stage sera ajouté :
+                <button class="filter-btn" data-filter="professionnel">Professionnel</button> -->
                 <button class="filter-btn" data-filter="personnel">Personnel</button>
             </div>
 
@@ -189,19 +190,20 @@
                     </div>
                 </div>
 
-                <!-- Projet 2 : Professionnel -->
-                <div class="project-card" data-category="professionnel" onclick="openModal('projet_professionnel')">
+                <!-- Projet 2 : Personnel (Python + API) -->
+                <div class="project-card" data-category="personnel" onclick="openModal('projet_valorant')">
                     <div class="project-img-container">
-                        <img src="img/projet-professionnel.svg" alt="Bureaux et application web : mission en entreprise">
-                        <span class="project-category-tag">Projet professionnel</span>
+                        <img src="img/projet-valorant.svg" alt="Script Python, fichier JSON et tableau de bord de statistiques">
+                        <span class="project-category-tag">Projet personnel</span>
                     </div>
                     <div class="project-content">
-                        <p class="date">Mars - Juin 2027</p>
-                        <h3>Mission technique en entreprise (Stage 1re année)</h3>
-                        <p class="desc">Ce projet professionnel sera réalisé au cours de mon premier stage en entreprise, répondant à un besoin métier réel en développement ou intégration web.</p>
+                        <p class="date">Novembre 2026</p>
+                        <h3>Chronique Valorant : tableau de bord de statistiques</h3>
+                        <p class="desc">Un script Python interroge l'API HenrikDev pour récupérer mes parties classées, calcule mes statistiques (ACS, ADR, K/D/A) et les affiche dans une page web interactive avec graphiques.</p>
                         <div class="tags mt-2 justify-start">
-                            <span class="badge-stage">Stage 1re année</span>
-                            <span class="badge-mission">Mission pro</span>
+                            <span class="badge-sio">Python</span>
+                            <span class="badge-mission">API REST</span>
+                            <span class="badge-game">HTML / CSS / JS</span>
                         </div>
                         <button class="btn btn-more mt-3"><i class="fas fa-info-circle"></i> Plus d'infos</button>
                     </div>
