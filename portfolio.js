@@ -76,7 +76,7 @@ const projectsData = {
     'projet_professionnel': {
         title: 'Mission technique en entreprise (Stage 1re année)',
         img: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800',
-        context: 'Projet à réaliser durant mon stage obligatoire de 4 à 5 semaines (prévu entre mars et juin 2027). J\'y mettrai en pratique mes apprentissages dans une équipe professionnelle de développement.',
+        context: 'Projet à réaliser durant mon stage obligatoire de 4 à 5 semaines (prévu entre mai et août 2027). J\'y mettrai en pratique mes apprentissages dans une équipe professionnelle de développement.',
         skills: [
             'Répondre aux besoins d\'une organisation et de ses utilisateurs',
             'Collaborer au sein d\'une équipe de développement informatique',
