@@ -106,7 +106,7 @@ const projectsData = {
             'Comprendre et gérer une architecture Client-Serveur en temps réel',
             'Maîtriser les bases du Game Design et de la physique 3D'
         ],
-        link: 'https://github.com/Tylan-Ly/portfolio-tylan'
+        meta: 'En cours de développement · Projet personnel · Lua, Roblox Studio'
     }
 };
 
@@ -126,7 +126,8 @@ function openModal(projectId) {
         document.getElementById('modal-details-wrap').style.display = data.details ? 'block' : 'none';
         document.getElementById('modal-gallery').innerHTML = (data.gallery || []).map(g => `<figure><img src="${g.src}" alt="${g.caption}" loading="lazy"><figcaption>${g.caption}</figcaption></figure>`).join('');
         document.getElementById('modal-gallery-wrap').style.display = data.gallery ? 'block' : 'none';
-        document.getElementById('modal-link').href = data.link;
+        document.getElementById('modal-link').style.display = data.link ? '' : 'none';
+        if (data.link) document.getElementById('modal-link').href = data.link;
         document.getElementById('modal-link').innerHTML = `<i class="${data.linkIcon || 'fab fa-github'}"></i> ${data.linkLabel || 'Voir le dépôt GitHub'}`;
 
         const skillsList = document.getElementById('modal-skills');
