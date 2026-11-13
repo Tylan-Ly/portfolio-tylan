@@ -33,69 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
-});
 
-// Données des projets
-const projectsData = {
-    'projet1': {
-        title: 'Création de Site Web Vitrine',
-        img: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800',
-        context: 'Projet réalisé en première année de BTS SIO dans le cadre des ateliers professionnels. L\'objectif était de concevoir un site from scratch respectant les normes d\'accessibilité et le responsive design.',
-        skills: [
-            'Gérer le patrimoine informatique',
-            'Développer la présence en ligne de l\'organisation',
-            'Mettre à disposition des utilisateurs un service informatique'
-        ],
-        link: 'https://github.com'
-    },
-    'projet2': {
-        title: 'Gestion de Base de Données',
-        img: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800',
-        context: 'Création d\'un script Python pour l\'automatisation des requêtes SQL et la gestion des données clients d\'une entreprise fictive.',
-        skills: [
-            'Travailler en mode projet',
-            'Répondre aux incidents et aux demandes d\'évolution'
-        ],
-        link: 'https://github.com'
-    }
-};
-
-// Gestion de la modale
-function openModal(projectId) {
-    const modal = document.getElementById('project-modal');
-    const data = projectsData[projectId];
-
-    if (data) {
-        document.getElementById('modal-title').innerText = data.title;
-        document.getElementById('modal-img').src = data.img;
-        document.getElementById('modal-context').innerText = data.context;
-        document.getElementById('modal-link').href = data.link;
-
-        const skillsList = document.getElementById('modal-skills');
-        skillsList.innerHTML = '';
-        data.skills.forEach(skill => {
-            skillsList.innerHTML += `<li><i class="fas fa-check-circle"></i> ${skill}</li>`;
-        });
-    }
-    
-    modal.style.display = 'flex';
-    document.body.style.overflow = 'hidden'; 
-}
-
-function closeModal() {
-    const modal = document.getElementById('project-modal');
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto'; 
-}
-
-window.onclick = function(event) {
-    const modal = document.getElementById('project-modal');
-    if (event.target == modal) {
-        closeModal();
-    }
-}
-
-// Filtrage des projets
+    // Filtrage des projets
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
 
@@ -119,3 +58,57 @@ window.onclick = function(event) {
             });
         });
     });
+});
+
+// Données détaillées des projets pour la modale
+const projectsData = {
+    'projet_academique': {
+        title: 'Atelier de Développement Logiciel (BTS SIO)',
+        img: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800',
+        context: 'Cet atelier pratique obligatoire encadré par le CNED permet d\'apprendre à concevoir, développer et tester des architectures applicatives métiers. Il constitue l\'une des briques centrales de mon cursus BTS SIO option SLAM.',
+        skills: [
+            'Concevoir et développer une solution applicative',
+            'Gérer le cycle de vie d\'une application (BTS SIO Bloc 1)',
+            'Travailler dans un environnement de développement professionnel (IDE, Git)'
+        ],
+        link: 'https://github.com/Tylan-Ly'
+    },
+    'projet_professionnel': {
+        title: 'Mission technique en entreprise (Stage 1re année)',
+        img: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800',
+        context: 'Projet à réaliser durant mon stage obligatoire de 4 à 5 semaines (prévu entre mars et juin 2027). J\'y mettrai en pratique mes apprentissages dans une équipe professionnelle de développement.',
+        skills: [
+            'Répondre aux besoins d\'une organisation et de ses utilisateurs',
+            'Collaborer au sein d\'une équipe de développement informatique',
+            'Assurer la maintenance ou l\'intégration de modules logiciels'
+        ],
+        link: 'https://github.com/Tylan-Ly'
+    },
+    'projet_roblox': {
+        title: 'Création d\'un Jeu Vidéo Multijoueur (Roblox Studio)',
+        img: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800',
+        context: 'Projet personnel né d\'une passion pour le jeu vidéo et d\'une volonté de comprendre les mécaniques multi-joueurs. Développement de la logique en Lua (programmation événementielle) et gestion de la synchronisation réseau des joueurs (réseau Client-Serveur).',
+        skills: [
+            'Développer des algorithmes en langage Lua',
+            'Comprendre et gérer une architecture Client-Serveur en temps réel',
+            'Maîtriser les bases du Game Design et de la physique 3D'
+        ],
+        link: 'https://github.com/Tylan-Ly/portfolio-tylan'
+    }
+};
+
+// Gestion de la modale
+function openModal(projectId) {
+    const modal = document.getElementById('project-modal');
+    const data = projectsData[projectId];
+
+    if (data) {
+        document.getElementById('modal-title').innerText = data.title;
+        document.getElementById('modal-img').src = data.img;
+        document.getElementById('modal-context').innerText = data.context;
+        document.getElementById('modal-link').href = data.link;
+
+        const skillsList = document.getElementById('modal-skills');
+        skillsList.innerHTML = '';
+        data.skills.forEach(skill => {
+            skillsList
