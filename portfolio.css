@@ -220,3 +220,88 @@ a { text-decoration: none; color: inherit; }
     .nav-links { display: none; }
     .hero-buttons { flex-direction: column; }
 }
+/* --- FILTRES DE PROJETS --- */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+.filter-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-dark);
+    padding: 0.6rem 1.4rem;
+    border-radius: 8px;
+    color: var(--text-muted);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.filter-btn:hover {
+    color: var(--text-main);
+    background: rgba(192, 132, 252, 0.1);
+}
+.filter-btn.active {
+    background: var(--primary);
+    color: #000;
+    box-shadow: 0 0 15px rgba(192, 132, 252, 0.4);
+    border-color: var(--primary);
+}
+
+/* --- ADAPTATIONS DES CARTES --- */
+.project-img-container {
+    position: relative;
+    overflow: hidden;
+}
+.project-category-tag {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(192, 132, 252, 0.15);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(192, 132, 252, 0.3);
+    color: var(--primary);
+    padding: 0.3rem 0.8rem;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.justify-start {
+    justify-content: flex-start !important;
+}
+
+/* --- STYLES DES BADGES --- */
+.tags span {
+    border-radius: 6px !important;
+    font-size: 0.75rem !important;
+    font-weight: 600 !important;
+    padding: 0.3rem 0.7rem !important;
+}
+
+.badge-sio { background: rgba(59, 130, 246, 0.1) !important; color: #60a5fa !important; border: 1px solid rgba(59, 130, 246, 0.2) !important; }
+.badge-pending { background: rgba(156, 163, 175, 0.1) !important; color: #9ca3af !important; border: 1px solid rgba(156, 163, 175, 0.2) !important; }
+.badge-stage { background: rgba(168, 85, 247, 0.1) !important; color: #c084fc !important; border: 1px solid rgba(168, 85, 247, 0.2) !important; }
+.badge-mission { background: rgba(234, 179, 8, 0.1) !important; color: #fde047 !important; border: 1px solid rgba(234, 179, 8, 0.2) !important; }
+.badge-lua { background: rgba(14, 165, 233, 0.1) !important; color: #38bdf8 !important; border: 1px solid rgba(14, 165, 233, 0.2) !important; }
+.badge-roblox { background: rgba(239, 68, 68, 0.1) !important; color: #f87171 !important; border: 1px solid rgba(239, 68, 68, 0.2) !important; }
+.badge-game { background: rgba(16, 185, 129, 0.1) !important; color: #34d399 !important; border: 1px solid rgba(16, 185, 129, 0.2) !important; }
+
+/* --- BOUTON PLUS D'INFOS --- */
+.btn-more {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-dark);
+    color: var(--text-main);
+    width: 100%;
+    padding: 0.7rem 1.2rem;
+    font-size: 0.85rem;
+    border-radius: 8px;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+.btn-more:hover {
+    background: var(--primary);
+    color: #000;
+    box-shadow: 0 0 15px rgba(192, 132, 252, 0.3);
+}
