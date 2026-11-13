@@ -157,28 +157,69 @@
 
     <section id="realisations" class="section">
         <div class="container reveal">
-            <h2 class="section-title">Réalisations Professionnelles</h2>
-            <div class="grid-3">
-                <div class="project-card" onclick="openModal('projet1')">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=600" alt="Site Web">
+            <h2 class="section-title">Mes Projets</h2>
+
+            <!-- Boutons de filtrage -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Tous les projets</button>
+                <button class="filter-btn" data-filter="academique">Académique</button>
+                <button class="filter-btn" data-filter="professionnel">Professionnel</button>
+                <button class="filter-btn" data-filter="personnel">Personnel</button>
+            </div>
+
+            <div class="grid-3 project-grid">
+                <!-- Projet 1 : Académique -->
+                <div class="project-card" data-category="academique" onclick="openModal('projet_academique')">
+                    <div class="project-img-container">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=600" alt="Atelier SIO">
+                        <span class="project-category-tag">Projet académique</span>
+                    </div>
                     <div class="project-content">
-                        <h3>Création de Site Web</h3>
-                        <p class="date">Octobre 2025</p>
-                        <p class="desc">Développement d'un portfolio web fluide et professionnel.</p>
-                        <div class="tags mt-2">
-                            <span>HTML</span><span>CSS</span><span>JS</span>
+                        <p class="date">Année 2026 - 2027</p>
+                        <h3>Atelier de Développement Logiciel (BTS SIO)</h3>
+                        <p class="desc">Cette activité académique n'a pas encore débuté. Les consignes et la réalisation technique seront mises en ligne dès le lancement par l'établissement.</p>
+                        <div class="tags mt-2 justify-start">
+                            <span class="badge-sio">BTS SIO SLAM</span>
+                            <span class="badge-pending">En attente</span>
                         </div>
+                        <button class="btn btn-more mt-3"><i class="fas fa-info-circle"></i> Plus d'infos</button>
                     </div>
                 </div>
-                <div class="project-card" onclick="openModal('projet2')">
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=600" alt="Base de données">
+
+                <!-- Projet 2 : Professionnel -->
+                <div class="project-card" data-category="professionnel" onclick="openModal('projet_professionnel')">
+                    <div class="project-img-container">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=600" alt="Stage 1re année">
+                        <span class="project-category-tag">Projet professionnel</span>
+                    </div>
                     <div class="project-content">
-                        <h3>Gestion de Données</h3>
-                        <p class="date">Décembre 2025</p>
-                        <p class="desc">Création et administration d'une base de données applicative.</p>
-                        <div class="tags mt-2">
-                            <span>SQL</span><span>Python</span>
+                        <p class="date">Février - Août 2027</p>
+                        <h3>Mission technique en entreprise (Stage 1re année)</h3>
+                        <p class="desc">Ce projet professionnel sera réalisé au cours de mon premier stage en entreprise, répondant à un besoin métier réel en développement ou intégration web.</p>
+                        <div class="tags mt-2 justify-start">
+                            <span class="badge-stage">Stage 1re année</span>
+                            <span class="badge-mission">Mission pro</span>
                         </div>
+                        <button class="btn btn-more mt-3"><i class="fas fa-info-circle"></i> Plus d'infos</button>
+                    </div>
+                </div>
+
+                <!-- Projet 3 : Personnel -->
+                <div class="project-card" data-category="personnel" onclick="openModal('projet_roblox')">
+                    <div class="project-img-container">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=600" alt="Jeu Roblox">
+                        <span class="project-category-tag">Projet personnel</span>
+                    </div>
+                    <div class="project-content">
+                        <p class="date">En cours de développement</p>
+                        <h3>Création d'un Jeu Vidéo Multijoueur (Roblox Studio)</h3>
+                        <p class="desc">Conception d'un jeu interactif sous Roblox Studio : logique événementielle en Lua, synchronisation client-serveur et interface adaptative.</p>
+                        <div class="tags mt-2 justify-start">
+                            <span class="badge-lua">Lua</span>
+                            <span class="badge-roblox">Roblox Studio</span>
+                            <span class="badge-game">Game Design</span>
+                        </div>
+                        <button class="btn btn-more mt-3"><i class="fas fa-info-circle"></i> Plus d'infos</button>
                     </div>
                 </div>
             </div>
