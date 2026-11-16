@@ -65,12 +65,7 @@ const projectsData = {
     'projet_academique': {
         title: 'Atelier de Développement Logiciel (BTS SIO)',
         img: 'img/projet-academique.svg',
-        context: 'Cet atelier pratique obligatoire encadré par le CNED permet d\'apprendre à concevoir, développer et tester des architectures applicatives métiers. Il constitue l\'une des briques centrales de mon cursus BTS SIO option SLAM.',
-        skills: [
-            'Concevoir et développer une solution applicative',
-            'Gérer le cycle de vie d\'une application (BTS SIO Bloc 1)',
-            'Travailler dans un environnement de développement professionnel (IDE, Git)'
-        ],
+        context: 'Cet atelier pratique obligatoire encadré par le CNED permet d\'apprendre à concevoir, développer et tester des architectures applicatives métiers. Il constitue l\'une des briques centrales de mon cursus BTS SIO option SLAM.',
         link: 'https://github.com/Tylan-Ly'
     },
     'projet_valorant': {
@@ -100,12 +95,7 @@ const projectsData = {
     'projet_roblox': {
         title: 'Création d\'un Jeu Vidéo Multijoueur (Roblox Studio)',
         img: 'img/projet-roblox.svg',
-        context: 'Projet personnel né d\'une passion pour le jeu vidéo et d\'une volonté de comprendre les mécaniques multi-joueurs. Développement de la logique en Lua (programmation événementielle) et gestion de la synchronisation réseau des joueurs (réseau Client-Serveur).',
-        skills: [
-            'Développer des algorithmes en langage Lua',
-            'Comprendre et gérer une architecture Client-Serveur en temps réel',
-            'Maîtriser les bases du Game Design et de la physique 3D'
-        ],
+        context: 'Projet personnel né d\'une passion pour le jeu vidéo et d\'une volonté de comprendre les mécaniques multi-joueurs. Développement de la logique en Lua (programmation événementielle) et gestion de la synchronisation réseau des joueurs (réseau Client-Serveur).',
         meta: 'En cours de développement · Projet personnel · Lua, Roblox Studio'
     }
 };
@@ -132,7 +122,8 @@ function openModal(projectId) {
 
         const skillsList = document.getElementById('modal-skills');
         skillsList.innerHTML = '';
-        data.skills.forEach(skill => {
+        document.getElementById('modal-skills-wrap').style.display = data.skills ? 'block' : 'none';
+        (data.skills || []).forEach(skill => {
             skillsList.innerHTML += `<li><i class="fas fa-check-circle"></i> ${skill}</li>`;
         });
     }
